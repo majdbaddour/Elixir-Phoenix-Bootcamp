@@ -1,0 +1,7 @@
+<%= @topic.title %>
+<%# <button>Ping!</button> %>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        window.createChannel(<%= @topic.id %>)
+    });
+</script>
